@@ -1,0 +1,72 @@
+<!-- attendance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance with Biometric (Face and Fingerprint)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <h1 class="site-name">XYZ Institute</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+                    <li><a href="UserRegistration.html">Registration</a></li>
+                    <li><a href="UserLogin.html">Login</a></li>
+                    <li><a href="Enrollment.html">Enrolment</a></li>
+                    <li><a href="Attendance.html">Attendance</a></li>
+                    <li><a href="TeacherDetails.html">Teacher Details</a></li>
+                    <li><a href="StudentDetails.html">Student Details</a></li>
+                    <li><a href="Payment.html">Payment</a></li>
+        </ul>
+    </nav>
+    <div class="body">
+<div class="container">
+    <h2>Attendance</h2>
+    <form>
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Biometric Face Verification Field -->
+        <label for="face_verification">Verify Face for Attendance:</label>
+        <button type="button" onclick="verifyFace()">Verify Face</button>
+        <br><br>
+        <!-- <input type="text" id="face_verification" name="face_verification" accept="image/*" required> -->
+
+        <!-- Alternative Biometric Option for Fingerprint Verification -->
+        <label for="fingerprint_verification">Verify Fingerprint:</label>
+        <button type="button" onclick="verifyFingerprint()">Verify Fingerprint</button>
+        <br><br>
+        <!-- <input type="text" id="fingerprint_verification" name="fingerprint_verification" accept="image/*"> -->
+
+        <input type="submit" value="Try Again...">
+
+        <label for="status">Attendance Status:</label>
+        <select id="status" name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Late">Late</option>
+        </select>
+    </form>
+</div>
+</div>
+<script>
+    function verifyFace() {
+        // Placeholder function for face verification
+        alert("Verifying face for attendance...");
+    }
+
+    function verifyFingerprint() {
+        // Placeholder function for fingerprint verification
+        alert("Verifying fingerprint for attendance...");
+    }
+</script>
+
+</body>
+</html>
